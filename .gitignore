@@ -1,0 +1,14 @@
+# Pycharm undesired files
+*.idea
+*.xml
+*.iml
+
+
+# Python runtime
+*.pyc
+*.egg-info
+.pytest_cache
+
+# Virtual environments
+venv/
+.venv/
