@@ -12270,3 +12270,607 @@
 	 Progress: 16 jobs, 13/1/0 (done/running/ready), 1/2 (pending_tasks/waiting).
 250325-13:50:16,978 nipype.workflow DEBUG:
 	 Tasks currently running: 1. Pending: 1.
+250325-13:55:07,752 nipype.workflow INFO:
+	 [Node] Finished "1-SegmentationReconAll", elapsed time 12515.763946s.
+250325-13:55:07,754 nipype.workflow DEBUG:
+	 Needed files: /adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/T1.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/aseg.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/brain.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/brainmask.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/filled.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/norm.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/nu.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/orig.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/rawavg.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/rh.ribbon.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/lh.ribbon.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/ribbon.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/wm.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/wmparc.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.curv;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.curv;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.avg_curv;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.avg_curv;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.inflated;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.inflated;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.pial;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.pial;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.area.pial;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.area.pial;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.curv.pial;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.curv.pial;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.smoothwm;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.smoothwm;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.sphere;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.sphere;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.sulc;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.sulc;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.thickness;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.thickness;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.volume;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.volume;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.white;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.white;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.jacobian_white;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.jacobian_white;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA44_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.FG2.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.FG1.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA4p_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA3a_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA4a_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA3b_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.hOc4v.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.hOc4v.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.FG4.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA2_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.FG4.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA4a_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA4p_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA1_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.V1_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA4p_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.hOc1.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA44_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA4a_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.MT_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA44_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.MT_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.hOc3v.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.nofix.cortex.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.cortex.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.hOc2.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA2_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.MT_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.entorhinal_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA45_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.entorhinal_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA1_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.V2_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.hOc2.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.perirhinal_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA1_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA3a_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.FG3.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.MT_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA3b_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA45_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.FG1.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA3b_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.hOc3v.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.V2_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA4a_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA1_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.perirhinal_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA44_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA2_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA45_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.V1_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.V2_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.cortex.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA6_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA6_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.FG2.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.V1_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA45_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.nofix.cortex.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.cortex+hipamyg.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.perirhinal_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA4p_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.hOc1.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA3a_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.perirhinal_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA6_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA6_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.entorhinal_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.V2_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA2_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA3a_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.entorhinal_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA3b_exvivo.thresh.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.cortex+hipamyg.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.FG3.mpm.vpnl.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.V1_exvivo.label;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.aparc.DKTatlas.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA_exvivo.thresh.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.aparc.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.BA_exvivo.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA_exvivo.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.BA_exvivo.thresh.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.aparc.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.aparc.a2009s.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.mpm.vpnl.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.aparc.a2009s.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/rh.aparc.DKTatlas.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/label/lh.mpm.vpnl.annot;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/aparc+aseg.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/aparc.DKTatlas+aseg.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/mri/aparc.a2009s+aseg.mgz;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/lh.sphere.reg;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/surf/rh.sphere.reg;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/stats/aseg.stats;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/stats/wmparc.stats;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/stats/rh.aparc.stats;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/stats/lh.aparc.stats;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/stats/lh.aparc.a2009s.stats;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/stats/rh.aparc.a2009s.stats;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/stats/rh.curv.stats;/adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138/sub-ADNI002S1155_ses-M138/stats/lh.curv.stats;/adni_data/ADNI_BIDS/sub-ADNI002S1155/ses-M138/anat/sub-ADNI002S1155_ses-M138_T1w.nii.gz;/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/1-SegmentationReconAll/_0x62796c91697d2ec0fdc56204d4442703_unfinished.json;/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/1-SegmentationReconAll/command.txt;/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/1-SegmentationReconAll/_inputs.pklz;/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/1-SegmentationReconAll/_node.pklz
+250325-13:55:07,754 nipype.workflow DEBUG:
+	 Needed dirs: /adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138;/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/1-SegmentationReconAll/_report
+250325-13:55:07,754 nipype.workflow DEBUG:
+	 Removing files: 
+250325-13:55:07,754 nipype.workflow DEBUG:
+	 Saving results file: '/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz'
+250325-13:55:07,770 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/1-SegmentationReconAll/_report/report.rst"
+250325-13:55:08,4 nipype.workflow INFO:
+	 [Job 7] Completed (t1-freesurfer.1-SegmentationReconAll).
+250325-13:55:08,4 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250325-13:55:08,4 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 13.72/13.72, Free processors: 4/4, Free GPU slot:0/0.
+250325-13:55:08,39 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.2-CreateTsvFiles ID=11 (0.20GB, 1 threads). Free: 13.52GB, 3 threads, 0 GPU slots.
+250325-13:55:08,39 nipype.workflow DEBUG:
+	 [Node] Not cached "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles".
+250325-13:55:08,39 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.2-CreateTsvFiles" locally: cached=False, updated=False.
+250325-13:55:08,39 nipype.workflow DEBUG:
+	 [Node] Not cached "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles".
+250325-13:55:08,39 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.2-CreateTsvFiles (taskid=15).
+250325-13:55:08,40 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.2-CreateTsvFiles" in "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles".
+250325-13:55:08,40 nipype.workflow DEBUG:
+	 [Node] Not cached "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles".
+250325-13:55:08,40 nipype.workflow DEBUG:
+	 [Node] Setting 2 connected inputs of node "2-CreateTsvFiles" from 2 previous nodes.
+250325-13:55:08,40 nipype.utils DEBUG:
+	 Loading pkl: /adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/0-InitPipeline/result_0-InitPipeline.pklz
+250325-13:55:08,41 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250325-13:55:08,42 nipype.workflow DEBUG:
+	 output: subjects_dir
+250325-13:55:08,42 nipype.workflow DEBUG:
+	 [Node] 2-CreateTsvFiles - setting input subjects_dir = /adni_data/clinica_wd/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M138
+250325-13:55:08,42 nipype.utils DEBUG:
+	 Loading pkl: /adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz
+250325-13:55:08,45 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250325-13:55:08,47 nipype.workflow DEBUG:
+	 output: subject_id
+250325-13:55:08,47 nipype.workflow DEBUG:
+	 [Node] 2-CreateTsvFiles - setting input image_id = sub-ADNI002S1155_ses-M138
+250325-13:55:08,47 nipype.utils DEBUG:
+	 Removing contents of /adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles
+250325-13:55:08,48 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles/_report/report.rst"
+250325-13:55:08,48 nipype.workflow INFO:
+	 [Node] Executing "2-CreateTsvFiles" <nipype.interfaces.utility.wrappers.Function>
+250325-13:55:08,79 nipype.workflow INFO:
+	 [Node] Finished "2-CreateTsvFiles", elapsed time 0.030408s.
+250325-13:55:08,79 nipype.workflow DEBUG:
+	 Needed files: /adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles/_0xd50eebadfc805d7b84a9ecd61f076588_unfinished.json;/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles/_inputs.pklz;/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles/_node.pklz
+250325-13:55:08,79 nipype.workflow DEBUG:
+	 Needed dirs: /adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles/_report
+250325-13:55:08,79 nipype.workflow DEBUG:
+	 Removing files: 
+250325-13:55:08,79 nipype.workflow DEBUG:
+	 Saving results file: '/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles/result_2-CreateTsvFiles.pklz'
+250325-13:55:08,80 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles/_report/report.rst"
+250325-13:55:10,4 nipype.workflow DEBUG:
+	 Progress: 16 jobs, 14/1/0 (done/running/ready), 1/1 (pending_tasks/waiting).
+250325-13:55:10,4 nipype.workflow INFO:
+	 [Job 11] Completed (t1-freesurfer.2-CreateTsvFiles).
+250325-13:55:10,5 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250325-13:55:10,5 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 13.72/13.72, Free processors: 4/4, Free GPU slot:0/0.
+250325-13:55:10,39 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.SaveToCaps ID=15 (0.20GB, 1 threads). Free: 13.52GB, 3 threads, 0 GPU slots.
+250325-13:55:10,39 nipype.workflow DEBUG:
+	 [Node] Not cached "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps".
+250325-13:55:10,39 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.SaveToCaps" locally: cached=False, updated=False.
+250325-13:55:10,39 nipype.workflow DEBUG:
+	 [Node] Not cached "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps".
+250325-13:55:10,40 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.SaveToCaps (taskid=16).
+250325-13:55:10,40 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.SaveToCaps" in "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps".
+250325-13:55:10,40 nipype.workflow DEBUG:
+	 [Node] Not cached "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps".
+250325-13:55:10,40 nipype.workflow DEBUG:
+	 [Node] Setting 1 connected inputs of node "SaveToCaps" from 1 previous nodes.
+250325-13:55:10,40 nipype.utils DEBUG:
+	 Loading pkl: /adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/2-CreateTsvFiles/result_2-CreateTsvFiles.pklz
+250325-13:55:10,41 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250325-13:55:10,41 nipype.workflow DEBUG:
+	 output: image_id
+250325-13:55:10,41 nipype.workflow DEBUG:
+	 [Node] SaveToCaps - setting input image_id = sub-ADNI002S1155_ses-M138
+250325-13:55:10,41 nipype.utils DEBUG:
+	 Removing contents of /adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps
+250325-13:55:10,41 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps/_report/report.rst"
+250325-13:55:10,42 nipype.workflow INFO:
+	 [Node] Executing "SaveToCaps" <nipype.interfaces.utility.wrappers.Function>
+250325-13:55:10,260 nipype.workflow INFO:
+	 [Node] Finished "SaveToCaps", elapsed time 0.217542s.
+250325-13:55:10,260 nipype.workflow DEBUG:
+	 Needed files: /adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps/_0xb618b483806e475d01241d7b87925e0d_unfinished.json;/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps/_inputs.pklz;/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps/_node.pklz
+250325-13:55:10,260 nipype.workflow DEBUG:
+	 Needed dirs: /adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps/_report
+250325-13:55:10,260 nipype.workflow DEBUG:
+	 Removing files: 
+250325-13:55:10,261 nipype.workflow DEBUG:
+	 Saving results file: '/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps/result_SaveToCaps.pklz'
+250325-13:55:10,261 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/adni_data/clinica_wd/t1-freesurfer/fd5a79914dde7be091de3ec00e2cc3569d1c5735/SaveToCaps/_report/report.rst"
+250325-13:55:12,6 nipype.workflow DEBUG:
+	 Progress: 16 jobs, 15/1/0 (done/running/ready), 1/0 (pending_tasks/waiting).
+250325-13:55:12,7 nipype.workflow INFO:
+	 [Job 15] Completed (t1-freesurfer.SaveToCaps).
+250325-13:55:12,7 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250325-13:55:12,7 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 0 jobs ready. Free memory (GB): 13.72/13.72, Free processors: 4/4, Free GPU slot:0/0.
+250325-13:55:12,7 nipype.workflow DEBUG:
+	 No tasks are being run, and no jobs can be submitted to the queue. Potential deadlock
+250325-15:05:55,834 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:05:55,835 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:05:55,835 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:05:55,835 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:05:55,836 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:05:55,836 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:05:55,836 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:05:55,837 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:05:55,840 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:05:55,840 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:05:55,840 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:05:55,840 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:05:55,840 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:05:55,840 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:05:55,840 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:05:55,841 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:05:56,197 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:05:56,198 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:05:56,198 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:05:56,198 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:05:56,198 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:05:56,198 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:05:56,198 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:05:56,198 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:05:56,199 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:05:56,199 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:05:56,199 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:05:56,199 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:05:56,199 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:05:56,199 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:05:56,199 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:05:56,200 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:09:39,814 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:09:39,814 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:09:39,814 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:09:39,814 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:09:39,815 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:09:39,815 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:09:39,815 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:09:39,815 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:09:39,816 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:09:39,817 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:09:39,817 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:09:39,817 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:09:39,817 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:09:39,817 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:09:39,817 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:09:39,817 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:09:40,146 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:09:40,147 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:09:40,147 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:09:40,147 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:09:40,147 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:09:40,147 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:09:40,148 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:09:40,148 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:09:40,148 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:09:40,149 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:09:40,149 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:09:40,149 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:09:40,149 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:09:40,149 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:09:40,149 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:09:40,149 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:13:52,670 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:13:52,671 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:13:52,671 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:13:52,671 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:13:52,671 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:13:52,671 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:13:52,671 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:13:52,672 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:13:52,673 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:13:52,673 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:13:52,673 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:13:52,673 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:13:52,673 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:13:52,673 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:13:52,673 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:13:52,674 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:13:53,20 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:13:53,21 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:13:53,21 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:13:53,21 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:13:53,21 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:13:53,21 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:13:53,21 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:13:53,22 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:13:53,22 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:13:53,22 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:13:53,22 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:13:53,22 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:13:53,22 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:13:53,22 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:13:53,22 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:13:53,23 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:29:20,284 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:29:20,285 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:29:20,285 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:29:20,285 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:29:20,285 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:29:20,285 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:29:20,285 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:29:20,285 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:29:20,287 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:29:20,287 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:29:20,287 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:29:20,287 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:29:20,287 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:29:20,287 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:29:20,287 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:29:20,288 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:29:42,685 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:29:42,687 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:29:42,687 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:29:42,687 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:29:42,687 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:29:42,687 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:29:42,687 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:29:42,687 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:29:42,688 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:29:42,689 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:29:42,689 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:29:42,689 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:29:42,689 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:29:42,689 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:29:42,689 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:29:42,690 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:31:38,78 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:31:38,79 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:38,79 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:38,79 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:38,79 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:38,79 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:38,79 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:38,80 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:31:38,81 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:31:38,82 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:38,82 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:38,82 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:38,82 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:38,82 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:38,82 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:38,82 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:31:59,582 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:31:59,583 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:59,583 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:59,583 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:59,583 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:59,583 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:59,583 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:59,584 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:31:59,585 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:31:59,586 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:59,586 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:59,586 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:59,586 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:59,586 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:59,586 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:59,586 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:31:59,928 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:31:59,929 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:59,929 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:59,929 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:59,929 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:59,929 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:59,929 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:59,929 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:31:59,930 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:31:59,930 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:59,930 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:59,930 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:59,930 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:31:59,930 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:31:59,930 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:31:59,931 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:32:12,998 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:32:12,998 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:32:12,998 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:32:12,998 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:32:12,998 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:32:12,999 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:32:12,999 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:32:12,999 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:32:13,0 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:32:13,1 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:32:13,1 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:32:13,1 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:32:13,1 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:32:13,1 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:32:13,1 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:32:13,1 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:32:13,334 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:32:13,335 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:32:13,335 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:32:13,335 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:32:13,335 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:32:13,335 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:32:13,335 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:32:13,336 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:32:13,336 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:32:13,336 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:32:13,336 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:32:13,336 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:32:13,336 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:32:13,336 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:32:13,336 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:32:13,337 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:59:58,98 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:59:58,98 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:59:58,98 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:59:58,98 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:59:58,98 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:59:58,98 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:59:58,99 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:59:58,100 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-15:59:58,102 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-15:59:58,103 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:59:58,103 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:59:58,103 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:59:58,103 nipype.interface DEBUG:
+	 nodesktop_True
+250325-15:59:58,103 nipype.interface DEBUG:
+	 nosplash_True
+250325-15:59:58,103 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-15:59:58,103 nipype.interface DEBUG:
+	 No command "matlab" found on host petprepro. Please check that the corresponding package is installed.
+250325-16:01:45,815 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-16:01:45,816 nipype.interface DEBUG:
+	 nodesktop_True
+250325-16:01:45,816 nipype.interface DEBUG:
+	 nosplash_True
+250325-16:01:45,816 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-16:01:45,816 nipype.interface DEBUG:
+	 nodesktop_True
+250325-16:01:45,816 nipype.interface DEBUG:
+	 nosplash_True
+250325-16:01:45,816 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-16:03:02,356 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250325-16:03:02,357 nipype.interface DEBUG:
+	 nodesktop_True
+250325-16:03:02,357 nipype.interface DEBUG:
+	 nosplash_True
+250325-16:03:02,357 nipype.interface DEBUG:
+	 single_comp_thread_True
+250325-16:03:02,357 nipype.interface DEBUG:
+	 nodesktop_True
+250325-16:03:02,357 nipype.interface DEBUG:
+	 nosplash_True
+250325-16:03:02,357 nipype.interface DEBUG:
+	 single_comp_thread_True
