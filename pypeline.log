@@ -12874,3 +12874,1768 @@
 	 nosplash_True
 250325-16:03:02,357 nipype.interface DEBUG:
 	 single_comp_thread_True
+250326-00:38:17,249 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250326-00:38:17,250 nipype.interface DEBUG:
+	 nodesktop_True
+250326-00:38:17,250 nipype.interface DEBUG:
+	 nosplash_True
+250326-00:38:17,250 nipype.interface DEBUG:
+	 single_comp_thread_True
+250326-00:38:17,250 nipype.interface DEBUG:
+	 nodesktop_True
+250326-00:38:17,250 nipype.interface DEBUG:
+	 nosplash_True
+250326-00:38:17,250 nipype.interface DEBUG:
+	 single_comp_thread_True
+250326-07:51:34,269 nipype.workflow DEBUG:
+	 (t1-freesurfer.ReadingFiles, t1-freesurfer.Input): No edge data
+250326-07:51:34,269 nipype.workflow DEBUG:
+	 (t1-freesurfer.ReadingFiles, t1-freesurfer.Input): new edge data: {'connect': [('t1w', 't1w')]}
+250326-07:51:34,272 nipype.workflow DEBUG:
+	 (t1-freesurfer.Input, t1-freesurfer.0-InitPipeline): No edge data
+250326-07:51:34,272 nipype.workflow DEBUG:
+	 (t1-freesurfer.Input, t1-freesurfer.0-InitPipeline): new edge data: {'connect': [('t1w', 't1w')]}
+250326-07:51:34,272 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.1-SegmentationReconAll): No edge data
+250326-07:51:34,272 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.1-SegmentationReconAll): new edge data: {'connect': [('subjects_dir', 'subjects_dir'), ('t1w', 'T1_files'), ('image_id', 'subject_id'), ('flags', 'flags')]}
+250326-07:51:34,272 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.2-CreateTsvFiles): No edge data
+250326-07:51:34,272 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.2-CreateTsvFiles): new edge data: {'connect': [('subjects_dir', 'subjects_dir')]}
+250326-07:51:34,272 nipype.workflow DEBUG:
+	 (t1-freesurfer.1-SegmentationReconAll, t1-freesurfer.2-CreateTsvFiles): No edge data
+250326-07:51:34,273 nipype.workflow DEBUG:
+	 (t1-freesurfer.1-SegmentationReconAll, t1-freesurfer.2-CreateTsvFiles): new edge data: {'connect': [('subject_id', 'image_id')]}
+250326-07:51:34,273 nipype.workflow DEBUG:
+	 (t1-freesurfer.2-CreateTsvFiles, t1-freesurfer.Output): No edge data
+250326-07:51:34,273 nipype.workflow DEBUG:
+	 (t1-freesurfer.2-CreateTsvFiles, t1-freesurfer.Output): new edge data: {'connect': [('image_id', 'image_id')]}
+250326-07:51:34,273 nipype.workflow DEBUG:
+	 (t1-freesurfer.Output, t1-freesurfer.SaveToCaps): No edge data
+250326-07:51:34,273 nipype.workflow DEBUG:
+	 (t1-freesurfer.Output, t1-freesurfer.SaveToCaps): new edge data: {'connect': [('image_id', 'image_id')]}
+250326-07:51:34,293 nipype.workflow DEBUG:
+	 [MultiProc] Starting (n_procs=4, n_gpu_procs=0, mem_gb=21.32, cwd=/home/david/Desktop/code/adni_clinica)
+250326-07:51:34,293 nipype.workflow DEBUG:
+	 Creating flat graph for workflow: t1-freesurfer
+250326-07:51:34,294 nipype.workflow DEBUG:
+	 expanding workflow: t1-freesurfer
+250326-07:51:34,295 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.Input
+250326-07:51:34,295 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.Output
+250326-07:51:34,295 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.ReadingFiles
+250326-07:51:34,295 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.0-InitPipeline
+250326-07:51:34,295 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.1-SegmentationReconAll
+250326-07:51:34,295 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.2-CreateTsvFiles
+250326-07:51:34,295 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.SaveToCaps
+250326-07:51:34,295 nipype.workflow DEBUG:
+	 finished expanding workflow: t1-freesurfer
+250326-07:51:34,295 nipype.workflow INFO:
+	 Workflow t1-freesurfer settings: ['check', 'execution', 'logging', 'monitoring']
+250326-07:51:34,296 nipype.workflow DEBUG:
+	 PE: expanding iterables
+250326-07:51:34,296 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.Input from the graph.
+250326-07:51:34,296 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.Output from the graph.
+250326-07:51:34,296 nipype.workflow DEBUG:
+	 Detected iterable nodes [t1-freesurfer.ReadingFiles]
+250326-07:51:34,296 nipype.workflow DEBUG:
+	 Expanding the iterable node t1-freesurfer.ReadingFiles...
+250326-07:51:34,296 nipype.workflow DEBUG:
+	 node: t1-freesurfer.ReadingFiles iterables: {'t1w': <function _standardize_iterables.<locals>.make_field_func.<locals>.<lambda> at 0x7878bae88860>}
+250326-07:51:34,296 nipype.workflow DEBUG:
+	 ('subnodes:', [t1-freesurfer.ReadingFiles, t1-freesurfer.0-InitPipeline, t1-freesurfer.1-SegmentationReconAll, t1-freesurfer.2-CreateTsvFiles, t1-freesurfer.SaveToCaps])
+250326-07:51:34,297 nipype.workflow DEBUG:
+	 [Node] ReadingFiles - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:51:34,297 nipype.workflow DEBUG:
+	 Parameterization: paramstr=_t1w_..home..david..Desktop..ADNI..ADNI_BIDS..sub-ADNI002S0413..ses-M132..anat..sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:51:34,298 nipype.workflow DEBUG:
+	 [Node] ReadingFiles - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:51:34,298 nipype.workflow DEBUG:
+	 Parameterization: paramstr=_t1w_..home..david..Desktop..ADNI..ADNI_BIDS..sub-ADNI002S0413..ses-M162..anat..sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:51:34,298 nipype.workflow DEBUG:
+	 [Node] ReadingFiles - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:51:34,298 nipype.workflow DEBUG:
+	 Parameterization: paramstr=_t1w_..home..david..Desktop..ADNI..ADNI_BIDS..sub-ADNI002S1155..ses-M126..anat..sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:51:34,298 nipype.workflow DEBUG:
+	 PE: expanding iterables ... done
+250326-07:51:34,299 nipype.workflow DEBUG:
+	 [Node] 0-InitPipeline - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:51:34,299 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.ReadingFiles from the graph.
+250326-07:51:34,299 nipype.workflow DEBUG:
+	 [Node] 0-InitPipeline - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:51:34,299 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.ReadingFiles from the graph.
+250326-07:51:34,299 nipype.workflow DEBUG:
+	 [Node] 0-InitPipeline - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:51:34,299 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.ReadingFiles from the graph.
+250326-07:51:34,307 nipype.workflow DEBUG:
+	 Performing depth first search
+250326-07:51:34,309 nipype.workflow INFO:
+	 Running in parallel.
+250326-07:51:34,314 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 0/0/3 (done/running/ready), 0/12 (pending_tasks/waiting).
+250326-07:51:34,314 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250326-07:51:34,314 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 21.32/21.32, Free processors: 4/4, Free GPU slot:0/0.
+250326-07:51:34,349 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.0-InitPipeline ID=0 (0.20GB, 1 threads). Free: 21.12GB, 3 threads, 0 GPU slots.
+250326-07:51:34,349 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:51:34,349 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.0-InitPipeline" locally: cached=False, updated=False.
+250326-07:51:34,349 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:51:34,367 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.0-InitPipeline (taskid=1).
+250326-07:51:34,368 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.0-InitPipeline ID=1 (0.20GB, 1 threads). Free: 20.92GB, 2 threads, 0 GPU slots.
+250326-07:51:34,368 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:51:34,369 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.0-InitPipeline" locally: cached=False, updated=False.
+250326-07:51:34,369 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:51:34,370 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.0-InitPipeline (taskid=2).
+250326-07:51:34,370 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.0-InitPipeline ID=2 (0.20GB, 1 threads). Free: 20.72GB, 1 threads, 0 GPU slots.
+250326-07:51:34,372 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:51:34,372 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.0-InitPipeline" locally: cached=False, updated=False.
+250326-07:51:34,372 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:51:34,372 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.0-InitPipeline" in "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:51:34,373 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:51:34,373 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.0-InitPipeline (taskid=3).
+250326-07:51:34,373 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline
+250326-07:51:34,373 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.0-InitPipeline" in "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:51:34,374 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:51:34,374 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.0-InitPipeline" in "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:51:34,374 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline
+250326-07:51:34,374 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:51:34,374 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_report/report.rst"
+250326-07:51:34,375 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline
+250326-07:51:34,376 nipype.workflow INFO:
+	 [Node] Executing "0-InitPipeline" <nipype.interfaces.utility.wrappers.Function>
+250326-07:51:34,376 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_report/report.rst"
+250326-07:51:34,376 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_report/report.rst"
+250326-07:51:34,377 nipype.workflow INFO:
+	 [Node] Executing "0-InitPipeline" <nipype.interfaces.utility.wrappers.Function>
+250326-07:51:34,378 nipype.workflow INFO:
+	 [Node] Executing "0-InitPipeline" <nipype.interfaces.utility.wrappers.Function>
+250326-07:51:34,382 nipype.workflow INFO:
+	 [Node] Finished "0-InitPipeline", elapsed time 0.00497s.
+250326-07:51:34,382 nipype.workflow INFO:
+	 [Node] Finished "0-InitPipeline", elapsed time 0.003813s.
+250326-07:51:34,382 nipype.workflow INFO:
+	 [Node] Finished "0-InitPipeline", elapsed time 0.003885s.
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Needed files: /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz;/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_0x8e29405ba9ed59b23578f1873f4b633d_unfinished.json;/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_inputs.pklz;/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_node.pklz
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132;/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_report
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Needed files: /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz;/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_0x5ce11ffb85b1028b17ab55fe3fb531e6_unfinished.json;/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_inputs.pklz;/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_node.pklz
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Removing files: 
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126;/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_report
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Removing files: 
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/result_0-InitPipeline.pklz'
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/result_0-InitPipeline.pklz'
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Needed files: /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz;/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_0x7b75fec1cde72a500e57b904dd6309f3_unfinished.json;/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_inputs.pklz;/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_node.pklz
+250326-07:51:34,383 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162;/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_report
+250326-07:51:34,384 nipype.workflow DEBUG:
+	 Removing files: 
+250326-07:51:34,384 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/result_0-InitPipeline.pklz'
+250326-07:51:34,384 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_report/report.rst"
+250326-07:51:34,384 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_report/report.rst"
+250326-07:51:34,384 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_report/report.rst"
+250326-07:51:36,318 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 0/3/0 (done/running/ready), 3/9 (pending_tasks/waiting).
+250326-07:51:36,318 nipype.workflow INFO:
+	 [Job 0] Completed (t1-freesurfer.0-InitPipeline).
+250326-07:51:36,319 nipype.workflow INFO:
+	 [Job 1] Completed (t1-freesurfer.0-InitPipeline).
+250326-07:51:36,320 nipype.workflow INFO:
+	 [Job 2] Completed (t1-freesurfer.0-InitPipeline).
+250326-07:51:36,320 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250326-07:51:36,320 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 21.32/21.32, Free processors: 4/4, Free GPU slot:0/0.
+250326-07:51:36,383 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.1-SegmentationReconAll ID=3 (0.20GB, 1 threads). Free: 21.12GB, 3 threads, 0 GPU slots.
+250326-07:51:36,383 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:51:36,383 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.1-SegmentationReconAll" locally: cached=False, updated=False.
+250326-07:51:36,383 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:51:36,384 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.1-SegmentationReconAll (taskid=4).
+250326-07:51:36,384 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.1-SegmentationReconAll ID=4 (0.20GB, 1 threads). Free: 20.92GB, 2 threads, 0 GPU slots.
+250326-07:51:36,386 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:51:36,386 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.1-SegmentationReconAll" locally: cached=False, updated=False.
+250326-07:51:36,386 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:51:36,386 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.1-SegmentationReconAll (taskid=5).
+250326-07:51:36,386 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.1-SegmentationReconAll ID=5 (0.20GB, 1 threads). Free: 20.72GB, 1 threads, 0 GPU slots.
+250326-07:51:36,386 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:51:36,386 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.1-SegmentationReconAll" locally: cached=False, updated=False.
+250326-07:51:36,386 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:51:36,387 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.1-SegmentationReconAll (taskid=6).
+250326-07:51:36,388 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.1-SegmentationReconAll" in "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:51:36,388 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:51:36,388 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.1-SegmentationReconAll" in "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:51:36,388 nipype.workflow DEBUG:
+	 [Node] Setting 4 connected inputs of node "1-SegmentationReconAll" from 1 previous nodes.
+250326-07:51:36,388 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:51:36,388 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.1-SegmentationReconAll" in "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:51:36,388 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/result_0-InitPipeline.pklz
+250326-07:51:36,388 nipype.workflow DEBUG:
+	 [Node] Setting 4 connected inputs of node "1-SegmentationReconAll" from 1 previous nodes.
+250326-07:51:36,388 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:51:36,388 nipype.workflow DEBUG:
+	 [Node] Setting 4 connected inputs of node "1-SegmentationReconAll" from 1 previous nodes.
+250326-07:51:36,388 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/result_0-InitPipeline.pklz
+250326-07:51:36,388 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:51:36,388 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/result_0-InitPipeline.pklz
+250326-07:51:36,388 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subjects_dir = /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-07:51:36,388 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 output: t1w
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input T1_files = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subjects_dir = /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 output: t1w
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input T1_files = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 output: image_id
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subject_id = sub-ADNI002S0413_ses-M162
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 output: flags
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input flags = -qcache
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 output: image_id
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subject_id = sub-ADNI002S1155_ses-M126
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 output: flags
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input flags = -qcache -cw256
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:51:36,389 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-07:51:36,389 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subjects_dir = /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 output: t1w
+250326-07:51:36,389 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input T1_files = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:51:36,390 nipype.workflow DEBUG:
+	 output: image_id
+250326-07:51:36,390 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subject_id = sub-ADNI002S0413_ses-M132
+250326-07:51:36,390 nipype.workflow DEBUG:
+	 output: flags
+250326-07:51:36,390 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input flags = -qcache -cw256
+250326-07:51:36,390 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/_report/report.rst"
+250326-07:51:36,390 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/_report/report.rst"
+250326-07:51:36,390 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll
+250326-07:51:36,390 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/_report/report.rst"
+250326-07:51:36,391 nipype.workflow INFO:
+	 [Node] Executing "1-SegmentationReconAll" <nipype.interfaces.freesurfer.preprocess.ReconAll>
+250326-07:51:36,391 nipype.workflow INFO:
+	 [Node] Executing "1-SegmentationReconAll" <nipype.interfaces.freesurfer.preprocess.ReconAll>
+250326-07:51:36,392 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz']
+250326-07:51:36,392 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz']
+250326-07:51:36,392 nipype.interface DEBUG:
+	 directive_all
+250326-07:51:36,392 nipype.interface DEBUG:
+	 directive_all
+250326-07:51:36,392 nipype.interface DEBUG:
+	 flags_['-qcache']
+250326-07:51:36,392 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:51:36,392 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M162
+250326-07:51:36,392 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S1155_ses-M126
+250326-07:51:36,392 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-07:51:36,392 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-07:51:36,393 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz']
+250326-07:51:36,393 nipype.interface DEBUG:
+	 directive_all
+250326-07:51:36,393 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:51:36,393 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S1155_ses-M126
+250326-07:51:36,393 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-07:51:36,393 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz']
+250326-07:51:36,393 nipype.workflow INFO:
+	 [Node] Executing "1-SegmentationReconAll" <nipype.interfaces.freesurfer.preprocess.ReconAll>
+250326-07:51:36,393 nipype.interface DEBUG:
+	 directive_all
+250326-07:51:36,393 nipype.interface DEBUG:
+	 flags_['-qcache']
+250326-07:51:36,393 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M162
+250326-07:51:36,393 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-07:51:36,394 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz']
+250326-07:51:36,394 nipype.interface DEBUG:
+	 directive_all
+250326-07:51:36,394 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:51:36,394 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M132
+250326-07:51:36,394 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-07:51:36,394 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz']
+250326-07:51:36,394 nipype.interface DEBUG:
+	 directive_all
+250326-07:51:36,394 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:51:36,394 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M132
+250326-07:51:36,394 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-07:51:38,430 nipype.workflow INFO:
+	 [Node] Finished "1-SegmentationReconAll", elapsed time 2.037746s.
+250326-07:51:38,430 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz'
+250326-07:51:38,431 nipype.workflow WARNING:
+	 [Node] Error on "t1-freesurfer.1-SegmentationReconAll" (/tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll)
+250326-07:51:38,434 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmp7vf83m_h/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz
+250326-07:51:38,434 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:51:38,439 nipype.workflow INFO:
+	 [Node] Finished "1-SegmentationReconAll", elapsed time 2.04545s.
+250326-07:51:38,439 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz'
+250326-07:51:38,440 nipype.workflow WARNING:
+	 [Node] Error on "t1-freesurfer.1-SegmentationReconAll" (/tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll)
+250326-07:51:38,442 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz
+250326-07:51:38,442 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:51:38,448 nipype.workflow INFO:
+	 [Node] Finished "1-SegmentationReconAll", elapsed time 2.056078s.
+250326-07:51:38,448 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz'
+250326-07:51:38,449 nipype.workflow WARNING:
+	 [Node] Error on "t1-freesurfer.1-SegmentationReconAll" (/tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll)
+250326-07:51:38,450 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmp7vf83m_h/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz
+250326-07:51:38,451 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:51:38,454 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 3/3/0 (done/running/ready), 3/6 (pending_tasks/waiting).
+250326-07:51:38,455 nipype.workflow DEBUG:
+	 Clearing 3 from queue
+250326-07:51:38,456 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz
+250326-07:51:38,457 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:51:38,458 nipype.workflow ERROR:
+	 Node 1-SegmentationReconAll.a0 failed to run on host UbuntuPET.
+250326-07:51:38,458 nipype.workflow ERROR:
+	 Saving crash info to /home/david/Desktop/code/adni_clinica/crash-20250326-075138-david-1-SegmentationReconAll.a0-889aee5e-8856-493c-b84d-0de76c3d6bce.pklz
+Traceback (most recent call last):
+  File "/home/david/miniconda3/envs/adni_clinica/lib/python3.12/site-packages/nipype/pipeline/plugins/multiproc.py", line 67, in run_node
+    result["result"] = node.run(updatehash=updatehash)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica/lib/python3.12/site-packages/nipype/pipeline/engine/nodes.py", line 525, in run
+    result = self._run_interface(execute=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica/lib/python3.12/site-packages/nipype/pipeline/engine/nodes.py", line 643, in _run_interface
+    return self._run_command(execute)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica/lib/python3.12/site-packages/nipype/pipeline/engine/nodes.py", line 769, in _run_command
+    raise NodeExecutionError(msg)
+nipype.pipeline.engine.nodes.NodeExecutionError: Exception raised while executing Node 1-SegmentationReconAll.
+
+Cmdline:
+	recon-all -all -i /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz -qcache -cw256 -subjid sub-ADNI002S0413_ses-M132 -sd /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+Stdout:
+	fs-check-version --s sub-ADNI002S0413_ses-M132 --o /tmp/tmp.YSvy8u
+	mer. 26 mars 2025 07:51:36 CET
+
+	setenv SUBJECTS_DIR /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+	cd /tmp/tmp7vf83m_h/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll
+	/usr/local/freesurfer/7.4.1/bin/fs-check-version --s sub-ADNI002S0413_ses-M132 --o /tmp/tmp.YSvy8u
+	-rwxr-xr-x 1 root root 18565 juin   14  2023 /usr/local/freesurfer/7.4.1/bin/fs-check-version
+
+	freesurfer-linux-ubuntu22_x86_64-7.4.1-20230614-7eb8460
+	$Id$
+	Linux UbuntuPET 6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+	pid 26894
+	Current FS Version freesurfer-linux-ubuntu22_x86_64-7.4.1-20230614-7eb8460
+	Subject does not have a bstampfile, copying /usr/local/freesurfer/7.4.1/build-stamp.txt
+	Subject FS Version: freesurfer-linux-ubuntu22_x86_64-7.4.1-20230614-7eb8460
+	No constraints on version because REQ=UnSet and FsVerFile=NotThere
+	#@#% fs-check-version match = 1
+	fs-check-version Done
+	INFO: SUBJECTS_DIR is /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+	Actual FREESURFER_HOME /usr/local/freesurfer/7.4.1
+	Linux UbuntuPET 6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+	-cw256 option is now persistent (remove with -clean-cw256)
+	/tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132
+
+	 mri_convert /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/orig/001.mgz 
+
+	mri_convert /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/orig/001.mgz 
+	--------------------------------------------------------------------------
+	ERROR: FreeSurfer license file /usr/local/freesurfer/7.4.1/.license not found.
+	  If you are outside the NMR-Martinos Center,
+	  go to http://surfer.nmr.mgh.harvard.edu/registration.html to 
+	  get a valid license file (it's free).
+	  If you are inside the NMR-Martinos Center,
+	  make sure to source the standard environment.
+	  A path to an alternative license file can also be
+	  specified with the FS_LICENSE environmental variable.
+	--------------------------------------------------------------------------
+	reading from /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz...
+	Command exited with non-zero status 255
+	@#@FSTIME  2025:03:26:07:51:38 mri_convert N 2 e 0.00 S 0.00 U 0.00 P 75% M 6144 F 1 R 240 W 0 c 0 w 2 I 248 O 0 L 23 1 41
+	@#@FSLOADPOST 2025:03:26:07:51:38 mri_convert N 2 23 1 41
+	Linux UbuntuPET 6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+	recon-all -s sub-ADNI002S0413_ses-M132 exited with ERRORS at mer. 26 mars 2025 07:51:38 CET
+
+	For more details, see the log file /tmp/tmp7vf83m_h/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/scripts/recon-all.log
+	To report a problem, see http://surfer.nmr.mgh.harvard.edu/fswiki/BugReporting
+
+Stderr:
+
+Traceback:
+	RuntimeError: subprocess exited with code 1.
+
+250326-07:53:25,595 nipype.workflow DEBUG:
+	 (t1-freesurfer.ReadingFiles, t1-freesurfer.Input): No edge data
+250326-07:53:25,596 nipype.workflow DEBUG:
+	 (t1-freesurfer.ReadingFiles, t1-freesurfer.Input): new edge data: {'connect': [('t1w', 't1w')]}
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.Input, t1-freesurfer.0-InitPipeline): No edge data
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.Input, t1-freesurfer.0-InitPipeline): new edge data: {'connect': [('t1w', 't1w')]}
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.1-SegmentationReconAll): No edge data
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.1-SegmentationReconAll): new edge data: {'connect': [('subjects_dir', 'subjects_dir'), ('t1w', 'T1_files'), ('image_id', 'subject_id'), ('flags', 'flags')]}
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.2-CreateTsvFiles): No edge data
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.2-CreateTsvFiles): new edge data: {'connect': [('subjects_dir', 'subjects_dir')]}
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.1-SegmentationReconAll, t1-freesurfer.2-CreateTsvFiles): No edge data
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.1-SegmentationReconAll, t1-freesurfer.2-CreateTsvFiles): new edge data: {'connect': [('subject_id', 'image_id')]}
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.2-CreateTsvFiles, t1-freesurfer.Output): No edge data
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.2-CreateTsvFiles, t1-freesurfer.Output): new edge data: {'connect': [('image_id', 'image_id')]}
+250326-07:53:25,598 nipype.workflow DEBUG:
+	 (t1-freesurfer.Output, t1-freesurfer.SaveToCaps): No edge data
+250326-07:53:25,599 nipype.workflow DEBUG:
+	 (t1-freesurfer.Output, t1-freesurfer.SaveToCaps): new edge data: {'connect': [('image_id', 'image_id')]}
+250326-07:53:25,607 nipype.workflow DEBUG:
+	 [MultiProc] Starting (n_procs=4, n_gpu_procs=0, mem_gb=21.32, cwd=/home/david/Desktop/code/adni_clinica)
+250326-07:53:25,607 nipype.workflow DEBUG:
+	 Creating flat graph for workflow: t1-freesurfer
+250326-07:53:25,609 nipype.workflow DEBUG:
+	 expanding workflow: t1-freesurfer
+250326-07:53:25,609 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.Input
+250326-07:53:25,609 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.Output
+250326-07:53:25,609 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.ReadingFiles
+250326-07:53:25,609 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.0-InitPipeline
+250326-07:53:25,609 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.1-SegmentationReconAll
+250326-07:53:25,609 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.2-CreateTsvFiles
+250326-07:53:25,609 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.SaveToCaps
+250326-07:53:25,609 nipype.workflow DEBUG:
+	 finished expanding workflow: t1-freesurfer
+250326-07:53:25,610 nipype.workflow INFO:
+	 Workflow t1-freesurfer settings: ['check', 'execution', 'logging', 'monitoring']
+250326-07:53:25,611 nipype.workflow DEBUG:
+	 PE: expanding iterables
+250326-07:53:25,611 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.Input from the graph.
+250326-07:53:25,611 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.Output from the graph.
+250326-07:53:25,611 nipype.workflow DEBUG:
+	 Detected iterable nodes [t1-freesurfer.ReadingFiles]
+250326-07:53:25,611 nipype.workflow DEBUG:
+	 Expanding the iterable node t1-freesurfer.ReadingFiles...
+250326-07:53:25,611 nipype.workflow DEBUG:
+	 node: t1-freesurfer.ReadingFiles iterables: {'t1w': <function _standardize_iterables.<locals>.make_field_func.<locals>.<lambda> at 0x7b5dafd4c860>}
+250326-07:53:25,612 nipype.workflow DEBUG:
+	 ('subnodes:', [t1-freesurfer.ReadingFiles, t1-freesurfer.0-InitPipeline, t1-freesurfer.1-SegmentationReconAll, t1-freesurfer.2-CreateTsvFiles, t1-freesurfer.SaveToCaps])
+250326-07:53:25,612 nipype.workflow DEBUG:
+	 [Node] ReadingFiles - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:53:25,612 nipype.workflow DEBUG:
+	 Parameterization: paramstr=_t1w_..home..david..Desktop..ADNI..ADNI_BIDS..sub-ADNI002S0413..ses-M132..anat..sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:53:25,613 nipype.workflow DEBUG:
+	 [Node] ReadingFiles - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:53:25,613 nipype.workflow DEBUG:
+	 Parameterization: paramstr=_t1w_..home..david..Desktop..ADNI..ADNI_BIDS..sub-ADNI002S0413..ses-M162..anat..sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:53:25,613 nipype.workflow DEBUG:
+	 [Node] ReadingFiles - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:53:25,613 nipype.workflow DEBUG:
+	 Parameterization: paramstr=_t1w_..home..david..Desktop..ADNI..ADNI_BIDS..sub-ADNI002S1155..ses-M126..anat..sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:53:25,614 nipype.workflow DEBUG:
+	 PE: expanding iterables ... done
+250326-07:53:25,614 nipype.workflow DEBUG:
+	 [Node] 0-InitPipeline - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:53:25,614 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.ReadingFiles from the graph.
+250326-07:53:25,614 nipype.workflow DEBUG:
+	 [Node] 0-InitPipeline - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:53:25,614 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.ReadingFiles from the graph.
+250326-07:53:25,614 nipype.workflow DEBUG:
+	 [Node] 0-InitPipeline - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:53:25,614 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.ReadingFiles from the graph.
+250326-07:53:25,615 nipype.workflow DEBUG:
+	 Performing depth first search
+250326-07:53:25,616 nipype.workflow INFO:
+	 Running in parallel.
+250326-07:53:25,617 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 0/0/3 (done/running/ready), 0/12 (pending_tasks/waiting).
+250326-07:53:25,617 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250326-07:53:25,617 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 21.32/21.32, Free processors: 4/4, Free GPU slot:0/0.
+250326-07:53:25,668 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.0-InitPipeline ID=0 (0.20GB, 1 threads). Free: 21.12GB, 3 threads, 0 GPU slots.
+250326-07:53:25,669 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:53:25,669 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.0-InitPipeline" locally: cached=False, updated=False.
+250326-07:53:25,669 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:53:25,693 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.0-InitPipeline (taskid=1).
+250326-07:53:25,694 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.0-InitPipeline ID=1 (0.20GB, 1 threads). Free: 20.92GB, 2 threads, 0 GPU slots.
+250326-07:53:25,696 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:53:25,696 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.0-InitPipeline" locally: cached=False, updated=False.
+250326-07:53:25,696 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.0-InitPipeline" in "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:53:25,696 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:53:25,697 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:53:25,697 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.0-InitPipeline (taskid=2).
+250326-07:53:25,697 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.0-InitPipeline ID=2 (0.20GB, 1 threads). Free: 20.72GB, 1 threads, 0 GPU slots.
+250326-07:53:25,697 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:53:25,697 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.0-InitPipeline" locally: cached=False, updated=False.
+250326-07:53:25,697 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:53:25,697 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline
+250326-07:53:25,697 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.0-InitPipeline (taskid=3).
+250326-07:53:25,698 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_report/report.rst"
+250326-07:53:25,700 nipype.workflow INFO:
+	 [Node] Executing "0-InitPipeline" <nipype.interfaces.utility.wrappers.Function>
+250326-07:53:25,700 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.0-InitPipeline" in "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:53:25,700 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:53:25,700 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.0-InitPipeline" in "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:53:25,700 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:53:25,701 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline
+250326-07:53:25,701 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_report/report.rst"
+250326-07:53:25,702 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline
+250326-07:53:25,704 nipype.workflow INFO:
+	 [Node] Executing "0-InitPipeline" <nipype.interfaces.utility.wrappers.Function>
+250326-07:53:25,706 nipype.workflow INFO:
+	 [Node] Finished "0-InitPipeline", elapsed time 0.005014s.
+250326-07:53:25,704 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_report/report.rst"
+250326-07:53:25,707 nipype.workflow DEBUG:
+	 Needed files: /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz;/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_0x306be1e7a32a3ede15ee0436532d0bd9_unfinished.json;/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_inputs.pklz;/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_node.pklz
+250326-07:53:25,707 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132;/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_report
+250326-07:53:25,707 nipype.workflow DEBUG:
+	 Removing files: 
+250326-07:53:25,707 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/result_0-InitPipeline.pklz'
+250326-07:53:25,708 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_report/report.rst"
+250326-07:53:25,708 nipype.workflow INFO:
+	 [Node] Executing "0-InitPipeline" <nipype.interfaces.utility.wrappers.Function>
+250326-07:53:25,714 nipype.workflow INFO:
+	 [Node] Finished "0-InitPipeline", elapsed time 0.007295s.
+250326-07:53:25,740 nipype.workflow DEBUG:
+	 Needed files: /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz;/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_0x24a8a455ca8ef86ce1c24380b2266418_unfinished.json;/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_inputs.pklz;/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_node.pklz
+250326-07:53:25,740 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126;/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_report
+250326-07:53:25,740 nipype.workflow DEBUG:
+	 Removing files: 
+250326-07:53:25,740 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/result_0-InitPipeline.pklz'
+250326-07:53:25,740 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_report/report.rst"
+250326-07:53:25,742 nipype.workflow INFO:
+	 [Node] Finished "0-InitPipeline", elapsed time 0.031912s.
+250326-07:53:25,744 nipype.workflow DEBUG:
+	 Needed files: /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz;/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_0xdab00373fee18fe7cc0a65b4b7284661_unfinished.json;/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_inputs.pklz;/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_node.pklz
+250326-07:53:25,744 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162;/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_report
+250326-07:53:25,744 nipype.workflow DEBUG:
+	 Removing files: 
+250326-07:53:25,744 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/result_0-InitPipeline.pklz'
+250326-07:53:25,744 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_report/report.rst"
+250326-07:53:27,620 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 0/3/0 (done/running/ready), 3/9 (pending_tasks/waiting).
+250326-07:53:27,620 nipype.workflow INFO:
+	 [Job 0] Completed (t1-freesurfer.0-InitPipeline).
+250326-07:53:27,621 nipype.workflow INFO:
+	 [Job 1] Completed (t1-freesurfer.0-InitPipeline).
+250326-07:53:27,621 nipype.workflow INFO:
+	 [Job 2] Completed (t1-freesurfer.0-InitPipeline).
+250326-07:53:27,621 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250326-07:53:27,622 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 21.32/21.32, Free processors: 4/4, Free GPU slot:0/0.
+250326-07:53:27,694 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.1-SegmentationReconAll ID=3 (0.20GB, 1 threads). Free: 21.12GB, 3 threads, 0 GPU slots.
+250326-07:53:27,694 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:53:27,694 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.1-SegmentationReconAll" locally: cached=False, updated=False.
+250326-07:53:27,694 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:53:27,695 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.1-SegmentationReconAll (taskid=4).
+250326-07:53:27,695 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.1-SegmentationReconAll ID=4 (0.20GB, 1 threads). Free: 20.92GB, 2 threads, 0 GPU slots.
+250326-07:53:27,695 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:53:27,695 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.1-SegmentationReconAll" locally: cached=False, updated=False.
+250326-07:53:27,695 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:53:27,696 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.1-SegmentationReconAll (taskid=5).
+250326-07:53:27,696 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.1-SegmentationReconAll ID=5 (0.20GB, 1 threads). Free: 20.72GB, 1 threads, 0 GPU slots.
+250326-07:53:27,696 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:53:27,696 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.1-SegmentationReconAll" locally: cached=False, updated=False.
+250326-07:53:27,696 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:53:27,696 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.1-SegmentationReconAll (taskid=6).
+250326-07:53:27,697 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.1-SegmentationReconAll" in "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] Setting 4 connected inputs of node "1-SegmentationReconAll" from 1 previous nodes.
+250326-07:53:27,698 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.1-SegmentationReconAll" in "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:53:27,698 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.1-SegmentationReconAll" in "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:53:27,698 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/result_0-InitPipeline.pklz
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] Setting 4 connected inputs of node "1-SegmentationReconAll" from 1 previous nodes.
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] Setting 4 connected inputs of node "1-SegmentationReconAll" from 1 previous nodes.
+250326-07:53:27,698 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/result_0-InitPipeline.pklz
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-07:53:27,698 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/result_0-InitPipeline.pklz
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subjects_dir = /tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 output: t1w
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input T1_files = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subjects_dir = /tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 output: t1w
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input T1_files = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:53:27,698 nipype.workflow DEBUG:
+	 output: image_id
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subject_id = sub-ADNI002S0413_ses-M162
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 output: flags
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input flags = -qcache
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 output: image_id
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subject_id = sub-ADNI002S1155_ses-M126
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 output: flags
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input flags = -qcache -cw256
+250326-07:53:27,699 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subjects_dir = /tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-07:53:27,699 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 output: t1w
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input T1_files = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmps8x746ok/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/_report/report.rst"
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 output: image_id
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subject_id = sub-ADNI002S0413_ses-M132
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 output: flags
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input flags = -qcache -cw256
+250326-07:53:27,699 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmps8x746ok/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/_report/report.rst"
+250326-07:53:27,700 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll
+250326-07:53:27,700 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmps8x746ok/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/_report/report.rst"
+250326-07:53:27,701 nipype.workflow INFO:
+	 [Node] Executing "1-SegmentationReconAll" <nipype.interfaces.freesurfer.preprocess.ReconAll>
+250326-07:53:27,701 nipype.workflow INFO:
+	 [Node] Executing "1-SegmentationReconAll" <nipype.interfaces.freesurfer.preprocess.ReconAll>
+250326-07:53:27,703 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz']
+250326-07:53:27,703 nipype.interface DEBUG:
+	 directive_all
+250326-07:53:27,703 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz']
+250326-07:53:27,703 nipype.interface DEBUG:
+	 flags_['-qcache']
+250326-07:53:27,703 nipype.workflow INFO:
+	 [Node] Executing "1-SegmentationReconAll" <nipype.interfaces.freesurfer.preprocess.ReconAll>
+250326-07:53:27,703 nipype.interface DEBUG:
+	 directive_all
+250326-07:53:27,703 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M162
+250326-07:53:27,703 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:53:27,703 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-07:53:27,703 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S1155_ses-M126
+250326-07:53:27,703 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-07:53:27,703 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz']
+250326-07:53:27,703 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz']
+250326-07:53:27,703 nipype.interface DEBUG:
+	 directive_all
+250326-07:53:27,703 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:53:27,703 nipype.interface DEBUG:
+	 directive_all
+250326-07:53:27,703 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S1155_ses-M126
+250326-07:53:27,703 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-07:53:27,703 nipype.interface DEBUG:
+	 flags_['-qcache']
+250326-07:53:27,703 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M162
+250326-07:53:27,703 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-07:53:27,703 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz']
+250326-07:53:27,703 nipype.interface DEBUG:
+	 directive_all
+250326-07:53:27,703 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:53:27,703 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M132
+250326-07:53:27,704 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-07:53:27,704 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz']
+250326-07:53:27,704 nipype.interface DEBUG:
+	 directive_all
+250326-07:53:27,704 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:53:27,704 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M132
+250326-07:53:27,704 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmps8x746ok/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-07:53:29,620 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 3/3/0 (done/running/ready), 3/6 (pending_tasks/waiting).
+250326-07:53:29,620 nipype.workflow DEBUG:
+	 Tasks currently running: 3. Pending: 3.
+250326-07:53:29,621 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 0 jobs ready. Free memory (GB): 20.72/21.32, Free processors: 1/4, Free GPU slot:0/0.
+                     Currently running:
+                       * t1-freesurfer.1-SegmentationReconAll
+                       * t1-freesurfer.1-SegmentationReconAll
+                       * t1-freesurfer.1-SegmentationReconAll
+250326-07:56:03,686 nipype.workflow DEBUG:
+	 (t1-freesurfer.ReadingFiles, t1-freesurfer.Input): No edge data
+250326-07:56:03,686 nipype.workflow DEBUG:
+	 (t1-freesurfer.ReadingFiles, t1-freesurfer.Input): new edge data: {'connect': [('t1w', 't1w')]}
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.Input, t1-freesurfer.0-InitPipeline): No edge data
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.Input, t1-freesurfer.0-InitPipeline): new edge data: {'connect': [('t1w', 't1w')]}
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.1-SegmentationReconAll): No edge data
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.1-SegmentationReconAll): new edge data: {'connect': [('subjects_dir', 'subjects_dir'), ('t1w', 'T1_files'), ('image_id', 'subject_id'), ('flags', 'flags')]}
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.2-CreateTsvFiles): No edge data
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.0-InitPipeline, t1-freesurfer.2-CreateTsvFiles): new edge data: {'connect': [('subjects_dir', 'subjects_dir')]}
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.1-SegmentationReconAll, t1-freesurfer.2-CreateTsvFiles): No edge data
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.1-SegmentationReconAll, t1-freesurfer.2-CreateTsvFiles): new edge data: {'connect': [('subject_id', 'image_id')]}
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.2-CreateTsvFiles, t1-freesurfer.Output): No edge data
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.2-CreateTsvFiles, t1-freesurfer.Output): new edge data: {'connect': [('image_id', 'image_id')]}
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.Output, t1-freesurfer.SaveToCaps): No edge data
+250326-07:56:03,688 nipype.workflow DEBUG:
+	 (t1-freesurfer.Output, t1-freesurfer.SaveToCaps): new edge data: {'connect': [('image_id', 'image_id')]}
+250326-07:56:03,694 nipype.workflow DEBUG:
+	 [MultiProc] Starting (n_procs=4, n_gpu_procs=0, mem_gb=21.32, cwd=/home/david/Desktop/code/adni_clinica)
+250326-07:56:03,695 nipype.workflow DEBUG:
+	 Creating flat graph for workflow: t1-freesurfer
+250326-07:56:03,696 nipype.workflow DEBUG:
+	 expanding workflow: t1-freesurfer
+250326-07:56:03,696 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.Input
+250326-07:56:03,696 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.Output
+250326-07:56:03,697 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.ReadingFiles
+250326-07:56:03,697 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.0-InitPipeline
+250326-07:56:03,697 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.1-SegmentationReconAll
+250326-07:56:03,697 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.2-CreateTsvFiles
+250326-07:56:03,697 nipype.workflow DEBUG:
+	 processing node: t1-freesurfer.SaveToCaps
+250326-07:56:03,697 nipype.workflow DEBUG:
+	 finished expanding workflow: t1-freesurfer
+250326-07:56:03,697 nipype.workflow INFO:
+	 Workflow t1-freesurfer settings: ['check', 'execution', 'logging', 'monitoring']
+250326-07:56:03,697 nipype.workflow DEBUG:
+	 PE: expanding iterables
+250326-07:56:03,698 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.Input from the graph.
+250326-07:56:03,698 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.Output from the graph.
+250326-07:56:03,698 nipype.workflow DEBUG:
+	 Detected iterable nodes [t1-freesurfer.ReadingFiles]
+250326-07:56:03,698 nipype.workflow DEBUG:
+	 Expanding the iterable node t1-freesurfer.ReadingFiles...
+250326-07:56:03,698 nipype.workflow DEBUG:
+	 node: t1-freesurfer.ReadingFiles iterables: {'t1w': <function _standardize_iterables.<locals>.make_field_func.<locals>.<lambda> at 0x7d85d7a94860>}
+250326-07:56:03,698 nipype.workflow DEBUG:
+	 ('subnodes:', [t1-freesurfer.ReadingFiles, t1-freesurfer.0-InitPipeline, t1-freesurfer.1-SegmentationReconAll, t1-freesurfer.2-CreateTsvFiles, t1-freesurfer.SaveToCaps])
+250326-07:56:03,699 nipype.workflow DEBUG:
+	 [Node] ReadingFiles - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:56:03,699 nipype.workflow DEBUG:
+	 Parameterization: paramstr=_t1w_..home..david..Desktop..ADNI..ADNI_BIDS..sub-ADNI002S0413..ses-M132..anat..sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:56:03,699 nipype.workflow DEBUG:
+	 [Node] ReadingFiles - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:56:03,699 nipype.workflow DEBUG:
+	 Parameterization: paramstr=_t1w_..home..david..Desktop..ADNI..ADNI_BIDS..sub-ADNI002S0413..ses-M162..anat..sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:56:03,700 nipype.workflow DEBUG:
+	 [Node] ReadingFiles - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:56:03,700 nipype.workflow DEBUG:
+	 Parameterization: paramstr=_t1w_..home..david..Desktop..ADNI..ADNI_BIDS..sub-ADNI002S1155..ses-M126..anat..sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:56:03,700 nipype.workflow DEBUG:
+	 PE: expanding iterables ... done
+250326-07:56:03,700 nipype.workflow DEBUG:
+	 [Node] 0-InitPipeline - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:56:03,700 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.ReadingFiles from the graph.
+250326-07:56:03,700 nipype.workflow DEBUG:
+	 [Node] 0-InitPipeline - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:56:03,700 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.ReadingFiles from the graph.
+250326-07:56:03,700 nipype.workflow DEBUG:
+	 [Node] 0-InitPipeline - setting input t1w = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:56:03,700 nipype.workflow DEBUG:
+	 Removed the identity node t1-freesurfer.ReadingFiles from the graph.
+250326-07:56:03,702 nipype.workflow DEBUG:
+	 Performing depth first search
+250326-07:56:03,703 nipype.workflow INFO:
+	 Running in parallel.
+250326-07:56:03,705 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 0/0/3 (done/running/ready), 0/12 (pending_tasks/waiting).
+250326-07:56:03,705 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250326-07:56:03,705 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 21.32/21.32, Free processors: 4/4, Free GPU slot:0/0.
+250326-07:56:03,758 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.0-InitPipeline ID=0 (0.20GB, 1 threads). Free: 21.12GB, 3 threads, 0 GPU slots.
+250326-07:56:03,759 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:56:03,759 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.0-InitPipeline" locally: cached=False, updated=False.
+250326-07:56:03,759 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:56:03,778 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.0-InitPipeline (taskid=1).
+250326-07:56:03,779 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.0-InitPipeline ID=1 (0.20GB, 1 threads). Free: 20.92GB, 2 threads, 0 GPU slots.
+250326-07:56:03,779 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:56:03,780 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.0-InitPipeline" locally: cached=False, updated=False.
+250326-07:56:03,780 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:56:03,781 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.0-InitPipeline (taskid=2).
+250326-07:56:03,781 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.0-InitPipeline ID=2 (0.20GB, 1 threads). Free: 20.72GB, 1 threads, 0 GPU slots.
+250326-07:56:03,783 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:56:03,783 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.0-InitPipeline" locally: cached=False, updated=False.
+250326-07:56:03,783 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:56:03,783 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.0-InitPipeline (taskid=3).
+250326-07:56:03,783 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.0-InitPipeline" in "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:56:03,783 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline".
+250326-07:56:03,783 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.0-InitPipeline" in "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:56:03,784 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline".
+250326-07:56:03,784 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline
+250326-07:56:03,784 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline
+250326-07:56:03,784 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.0-InitPipeline" in "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:56:03,784 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline".
+250326-07:56:03,785 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline
+250326-07:56:03,784 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_report/report.rst"
+250326-07:56:03,785 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_report/report.rst"
+250326-07:56:03,785 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_report/report.rst"
+250326-07:56:03,786 nipype.workflow INFO:
+	 [Node] Executing "0-InitPipeline" <nipype.interfaces.utility.wrappers.Function>
+250326-07:56:03,786 nipype.workflow INFO:
+	 [Node] Executing "0-InitPipeline" <nipype.interfaces.utility.wrappers.Function>
+250326-07:56:03,787 nipype.workflow INFO:
+	 [Node] Executing "0-InitPipeline" <nipype.interfaces.utility.wrappers.Function>
+250326-07:56:03,792 nipype.workflow INFO:
+	 [Node] Finished "0-InitPipeline", elapsed time 0.004493s.
+250326-07:56:03,792 nipype.workflow INFO:
+	 [Node] Finished "0-InitPipeline", elapsed time 0.005136s.
+250326-07:56:03,792 nipype.workflow INFO:
+	 [Node] Finished "0-InitPipeline", elapsed time 0.004759s.
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Needed files: /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_0x4fbbec924b690017e0d08d452e842225_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_node.pklz
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_report
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Removing files: 
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/result_0-InitPipeline.pklz'
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Needed files: /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_0x7aaaecd04716aa34b733c11344e25819_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_node.pklz
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Needed files: /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_0xffc088b60fb3d23a1d163f94728ac025_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_node.pklz
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_report
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Removing files: 
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/result_0-InitPipeline.pklz'
+250326-07:56:03,793 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_report
+250326-07:56:03,794 nipype.workflow DEBUG:
+	 Removing files: 
+250326-07:56:03,794 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/result_0-InitPipeline.pklz'
+250326-07:56:03,794 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/_report/report.rst"
+250326-07:56:03,794 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/_report/report.rst"
+250326-07:56:03,794 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/_report/report.rst"
+250326-07:56:05,707 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 0/3/0 (done/running/ready), 3/9 (pending_tasks/waiting).
+250326-07:56:05,707 nipype.workflow INFO:
+	 [Job 0] Completed (t1-freesurfer.0-InitPipeline).
+250326-07:56:05,708 nipype.workflow INFO:
+	 [Job 1] Completed (t1-freesurfer.0-InitPipeline).
+250326-07:56:05,708 nipype.workflow INFO:
+	 [Job 2] Completed (t1-freesurfer.0-InitPipeline).
+250326-07:56:05,709 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250326-07:56:05,709 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 21.32/21.32, Free processors: 4/4, Free GPU slot:0/0.
+250326-07:56:05,774 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.1-SegmentationReconAll ID=3 (0.20GB, 1 threads). Free: 21.12GB, 3 threads, 0 GPU slots.
+250326-07:56:05,774 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:56:05,774 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.1-SegmentationReconAll" locally: cached=False, updated=False.
+250326-07:56:05,774 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:56:05,775 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.1-SegmentationReconAll (taskid=4).
+250326-07:56:05,776 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.1-SegmentationReconAll ID=4 (0.20GB, 1 threads). Free: 20.92GB, 2 threads, 0 GPU slots.
+250326-07:56:05,776 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:56:05,776 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.1-SegmentationReconAll" locally: cached=False, updated=False.
+250326-07:56:05,777 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:56:05,777 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.1-SegmentationReconAll (taskid=5).
+250326-07:56:05,777 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.1-SegmentationReconAll ID=5 (0.20GB, 1 threads). Free: 20.72GB, 1 threads, 0 GPU slots.
+250326-07:56:05,777 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:56:05,777 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.1-SegmentationReconAll" locally: cached=False, updated=False.
+250326-07:56:05,777 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:56:05,778 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.1-SegmentationReconAll (taskid=6).
+250326-07:56:05,778 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.1-SegmentationReconAll" in "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:56:05,778 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll".
+250326-07:56:05,778 nipype.workflow DEBUG:
+	 [Node] Setting 4 connected inputs of node "1-SegmentationReconAll" from 1 previous nodes.
+250326-07:56:05,778 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/result_0-InitPipeline.pklz
+250326-07:56:05,779 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.1-SegmentationReconAll" in "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:56:05,779 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll".
+250326-07:56:05,779 nipype.workflow DEBUG:
+	 [Node] Setting 4 connected inputs of node "1-SegmentationReconAll" from 1 previous nodes.
+250326-07:56:05,779 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/result_0-InitPipeline.pklz
+250326-07:56:05,779 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.1-SegmentationReconAll" in "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:56:05,779 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll".
+250326-07:56:05,779 nipype.workflow DEBUG:
+	 [Node] Setting 4 connected inputs of node "1-SegmentationReconAll" from 1 previous nodes.
+250326-07:56:05,779 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:56:05,779 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/result_0-InitPipeline.pklz
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subjects_dir = /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: t1w
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input T1_files = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subjects_dir = /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: t1w
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: image_id
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input T1_files = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subject_id = sub-ADNI002S0413_ses-M132
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: flags
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input flags = -qcache -cw256
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: image_id
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subject_id = sub-ADNI002S0413_ses-M162
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: flags
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input flags = -qcache
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subjects_dir = /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: t1w
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input T1_files = /home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz
+250326-07:56:05,780 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll
+250326-07:56:05,780 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: image_id
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input subject_id = sub-ADNI002S1155_ses-M126
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 output: flags
+250326-07:56:05,780 nipype.workflow DEBUG:
+	 [Node] 1-SegmentationReconAll - setting input flags = -qcache -cw256
+250326-07:56:05,781 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll
+250326-07:56:05,781 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/_report/report.rst"
+250326-07:56:05,781 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/_report/report.rst"
+250326-07:56:05,782 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/_report/report.rst"
+250326-07:56:05,784 nipype.workflow INFO:
+	 [Node] Executing "1-SegmentationReconAll" <nipype.interfaces.freesurfer.preprocess.ReconAll>
+250326-07:56:05,784 nipype.workflow INFO:
+	 [Node] Executing "1-SegmentationReconAll" <nipype.interfaces.freesurfer.preprocess.ReconAll>
+250326-07:56:05,784 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz']
+250326-07:56:05,785 nipype.interface DEBUG:
+	 directive_all
+250326-07:56:05,785 nipype.interface DEBUG:
+	 flags_['-qcache']
+250326-07:56:05,785 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M162
+250326-07:56:05,785 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-07:56:05,785 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz']
+250326-07:56:05,785 nipype.interface DEBUG:
+	 directive_all
+250326-07:56:05,785 nipype.interface DEBUG:
+	 flags_['-qcache']
+250326-07:56:05,785 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz']
+250326-07:56:05,785 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M162
+250326-07:56:05,785 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-07:56:05,785 nipype.interface DEBUG:
+	 directive_all
+250326-07:56:05,785 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:56:05,785 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S1155_ses-M126
+250326-07:56:05,785 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-07:56:05,785 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz']
+250326-07:56:05,785 nipype.interface DEBUG:
+	 directive_all
+250326-07:56:05,785 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:56:05,785 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S1155_ses-M126
+250326-07:56:05,785 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-07:56:05,787 nipype.workflow INFO:
+	 [Node] Executing "1-SegmentationReconAll" <nipype.interfaces.freesurfer.preprocess.ReconAll>
+250326-07:56:05,788 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz']
+250326-07:56:05,788 nipype.interface DEBUG:
+	 directive_all
+250326-07:56:05,788 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:56:05,788 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M132
+250326-07:56:05,788 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-07:56:05,788 nipype.interface DEBUG:
+	 T1_files_['/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz']
+250326-07:56:05,788 nipype.interface DEBUG:
+	 directive_all
+250326-07:56:05,788 nipype.interface DEBUG:
+	 flags_['-qcache -cw256']
+250326-07:56:05,788 nipype.interface DEBUG:
+	 subject_id_sub-ADNI002S0413_ses-M132
+250326-07:56:05,788 nipype.interface DEBUG:
+	 subjects_dir_/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-07:56:07,708 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 3/3/0 (done/running/ready), 3/6 (pending_tasks/waiting).
+250326-07:56:07,708 nipype.workflow DEBUG:
+	 Tasks currently running: 3. Pending: 3.
+250326-07:56:07,709 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 0 jobs ready. Free memory (GB): 20.72/21.32, Free processors: 1/4, Free GPU slot:0/0.
+                     Currently running:
+                       * t1-freesurfer.1-SegmentationReconAll
+                       * t1-freesurfer.1-SegmentationReconAll
+                       * t1-freesurfer.1-SegmentationReconAll
+250326-12:36:18,229 nipype.workflow INFO:
+	 [Node] Finished "1-SegmentationReconAll", elapsed time 16812.444405s.
+250326-12:36:18,231 nipype.workflow DEBUG:
+	 Needed files: /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/T1.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/brain.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/brainmask.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/filled.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/norm.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/nu.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/orig.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/rawavg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/ribbon.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/lh.ribbon.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/rh.ribbon.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/wm.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/wmparc.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.avg_curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.avg_curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.inflated;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.inflated;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.area.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.area.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.curv.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.curv.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.smoothwm;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.smoothwm;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.sphere;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.sphere;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.sulc;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.sulc;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.thickness;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.thickness;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.volume;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.volume;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.jacobian_white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.jacobian_white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.nofix.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.FG4.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA3b_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA4p_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA6_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.hOc1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.V1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.FG1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA3a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.perirhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA6_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA4a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA4a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.FG4.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA4p_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA45_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.hOc2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.V2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA44_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA4a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.V1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA6_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.FG3.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA4a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.MT_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA45_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.MT_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.entorhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.hOc3v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.FG1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA45_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.V1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.FG2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA3a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.entorhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA3a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.FG3.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA6_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA45_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.V2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.entorhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.perirhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA44_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA3b_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA44_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.hOc2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.cortex+hipamyg.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.V1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.V2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.MT_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.hOc4v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA44_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.hOc3v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.cortex+hipamyg.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA4p_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA3a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.V2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.perirhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.hOc4v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA4p_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.FG2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA3b_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.perirhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.hOc1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.MT_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.entorhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA3b_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.nofix.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA_exvivo.thresh.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.aparc.DKTatlas.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.mpm.vpnl.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA_exvivo.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.aparc.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.aparc.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.aparc.a2009s.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.aparc.a2009s.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/lh.BA_exvivo.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.BA_exvivo.thresh.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.mpm.vpnl.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/label/rh.aparc.DKTatlas.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/aparc+aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/aparc.a2009s+aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/mri/aparc.DKTatlas+aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/lh.sphere.reg;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/surf/rh.sphere.reg;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/stats/aseg.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/stats/wmparc.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/stats/rh.aparc.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/stats/lh.aparc.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/stats/lh.aparc.a2009s.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/stats/rh.aparc.a2009s.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/stats/lh.curv.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126/sub-ADNI002S1155_ses-M126/stats/rh.curv.stats;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S1155/ses-M126/anat/sub-ADNI002S1155_ses-M126_T1w.nii.gz;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/_0x9a61ad35d9261811f18636718e87248b_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/command.txt;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/_node.pklz
+250326-12:36:18,231 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/_report
+250326-12:36:18,231 nipype.workflow DEBUG:
+	 Removing files: 
+250326-12:36:18,231 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz'
+250326-12:36:18,248 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/_report/report.rst"
+250326-12:36:18,387 nipype.workflow INFO:
+	 [Job 5] Completed (t1-freesurfer.1-SegmentationReconAll).
+250326-12:36:18,388 nipype.workflow DEBUG:
+	 Tasks currently running: 2. Pending: 2.
+250326-12:36:18,388 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 20.92/21.32, Free processors: 2/4, Free GPU slot:0/0.
+                     Currently running:
+                       * t1-freesurfer.1-SegmentationReconAll
+                       * t1-freesurfer.1-SegmentationReconAll
+250326-12:36:18,433 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.2-CreateTsvFiles ID=8 (0.20GB, 1 threads). Free: 20.72GB, 1 threads, 0 GPU slots.
+250326-12:36:18,433 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles".
+250326-12:36:18,433 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.2-CreateTsvFiles" locally: cached=False, updated=False.
+250326-12:36:18,433 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles".
+250326-12:36:18,434 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.2-CreateTsvFiles (taskid=7).
+250326-12:36:18,435 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.2-CreateTsvFiles" in "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles".
+250326-12:36:18,435 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles".
+250326-12:36:18,435 nipype.workflow DEBUG:
+	 [Node] Setting 2 connected inputs of node "2-CreateTsvFiles" from 2 previous nodes.
+250326-12:36:18,436 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/0-InitPipeline/result_0-InitPipeline.pklz
+250326-12:36:18,436 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-12:36:18,437 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-12:36:18,437 nipype.workflow DEBUG:
+	 [Node] 2-CreateTsvFiles - setting input subjects_dir = /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S1155_ses-M126
+250326-12:36:18,437 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz
+250326-12:36:18,442 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-12:36:18,444 nipype.workflow DEBUG:
+	 output: subject_id
+250326-12:36:18,444 nipype.workflow DEBUG:
+	 [Node] 2-CreateTsvFiles - setting input image_id = sub-ADNI002S1155_ses-M126
+250326-12:36:18,444 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles
+250326-12:36:18,445 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles/_report/report.rst"
+250326-12:36:18,445 nipype.workflow INFO:
+	 [Node] Executing "2-CreateTsvFiles" <nipype.interfaces.utility.wrappers.Function>
+250326-12:36:18,486 nipype.workflow INFO:
+	 [Node] Finished "2-CreateTsvFiles", elapsed time 0.040533s.
+250326-12:36:18,486 nipype.workflow DEBUG:
+	 Needed files: /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles/_0xe5fc56c57924acd2f5d971377d10d84d_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles/_node.pklz
+250326-12:36:18,487 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles/_report
+250326-12:36:18,487 nipype.workflow DEBUG:
+	 Removing files: 
+250326-12:36:18,487 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles/result_2-CreateTsvFiles.pklz'
+250326-12:36:18,487 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles/_report/report.rst"
+250326-12:36:20,387 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 4/3/0 (done/running/ready), 3/5 (pending_tasks/waiting).
+250326-12:36:20,387 nipype.workflow INFO:
+	 [Job 8] Completed (t1-freesurfer.2-CreateTsvFiles).
+250326-12:36:20,388 nipype.workflow DEBUG:
+	 Tasks currently running: 2. Pending: 2.
+250326-12:36:20,389 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 20.92/21.32, Free processors: 2/4, Free GPU slot:0/0.
+                     Currently running:
+                       * t1-freesurfer.1-SegmentationReconAll
+                       * t1-freesurfer.1-SegmentationReconAll
+250326-12:36:20,432 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.SaveToCaps ID=11 (0.20GB, 1 threads). Free: 20.72GB, 1 threads, 0 GPU slots.
+250326-12:36:20,432 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps".
+250326-12:36:20,432 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.SaveToCaps" locally: cached=False, updated=False.
+250326-12:36:20,432 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps".
+250326-12:36:20,433 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.SaveToCaps (taskid=8).
+250326-12:36:20,434 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.SaveToCaps" in "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps".
+250326-12:36:20,434 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps".
+250326-12:36:20,434 nipype.workflow DEBUG:
+	 [Node] Setting 1 connected inputs of node "SaveToCaps" from 1 previous nodes.
+250326-12:36:20,434 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/2-CreateTsvFiles/result_2-CreateTsvFiles.pklz
+250326-12:36:20,434 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-12:36:20,434 nipype.workflow DEBUG:
+	 output: image_id
+250326-12:36:20,434 nipype.workflow DEBUG:
+	 [Node] SaveToCaps - setting input image_id = sub-ADNI002S1155_ses-M126
+250326-12:36:20,435 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps
+250326-12:36:20,435 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps/_report/report.rst"
+250326-12:36:20,435 nipype.workflow INFO:
+	 [Node] Executing "SaveToCaps" <nipype.interfaces.utility.wrappers.Function>
+250326-12:36:20,759 nipype.workflow INFO:
+	 [Node] Finished "SaveToCaps", elapsed time 0.323498s.
+250326-12:36:20,760 nipype.workflow DEBUG:
+	 Needed files: /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps/_0x08477520ecedf189cf62e35c8cd66542_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps/_node.pklz
+250326-12:36:20,760 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps/_report
+250326-12:36:20,760 nipype.workflow DEBUG:
+	 Removing files: 
+250326-12:36:20,761 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps/result_SaveToCaps.pklz'
+250326-12:36:20,761 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/41affc3c7a9c8c179e960e9bbcc25a74e93f9734/SaveToCaps/_report/report.rst"
+250326-12:36:22,571 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 5/3/0 (done/running/ready), 3/4 (pending_tasks/waiting).
+250326-12:36:22,571 nipype.workflow INFO:
+	 [Job 11] Completed (t1-freesurfer.SaveToCaps).
+250326-12:36:22,572 nipype.workflow DEBUG:
+	 Tasks currently running: 2. Pending: 2.
+250326-12:36:22,572 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 0 jobs ready. Free memory (GB): 20.92/21.32, Free processors: 2/4, Free GPU slot:0/0.
+                     Currently running:
+                       * t1-freesurfer.1-SegmentationReconAll
+                       * t1-freesurfer.1-SegmentationReconAll
+250326-12:36:24,610 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 6/2/0 (done/running/ready), 2/4 (pending_tasks/waiting).
+250326-12:36:24,610 nipype.workflow DEBUG:
+	 Tasks currently running: 2. Pending: 2.
+250326-12:39:09,699 nipype.workflow INFO:
+	 [Node] Finished "1-SegmentationReconAll", elapsed time 16983.910747s.
+250326-12:39:09,701 nipype.workflow DEBUG:
+	 Needed files: /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/T1.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/brain.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/brainmask.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/filled.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/norm.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/nu.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/orig.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/rawavg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/ribbon.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/lh.ribbon.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/rh.ribbon.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/wm.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/wmparc.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.avg_curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.avg_curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.inflated;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.inflated;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.area.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.area.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.curv.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.curv.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.smoothwm;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.smoothwm;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.sphere;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.sphere;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.sulc;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.sulc;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.thickness;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.thickness;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.volume;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.volume;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.jacobian_white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.jacobian_white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.nofix.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.FG4.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA3b_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA4p_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA6_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.hOc1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.V1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.FG1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA3a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.perirhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA6_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA4a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA4a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.FG4.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA4p_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA45_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.hOc2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.V2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA44_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA4a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.V1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA6_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.FG3.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA4a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.MT_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA45_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.MT_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.entorhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.hOc3v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.FG1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA45_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.V1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.FG2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA3a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.entorhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA3a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.FG3.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA6_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA45_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.V2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.entorhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.perirhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA44_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA3b_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA44_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.hOc2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.cortex+hipamyg.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.V1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.V2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.MT_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.hOc4v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA44_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.hOc3v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.cortex+hipamyg.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA4p_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA3a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.V2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.perirhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.hOc4v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA4p_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.FG2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA3b_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.perirhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.hOc1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.MT_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.entorhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA3b_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.nofix.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA_exvivo.thresh.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.aparc.DKTatlas.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.mpm.vpnl.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA_exvivo.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.aparc.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.aparc.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.aparc.a2009s.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.aparc.a2009s.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/lh.BA_exvivo.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.BA_exvivo.thresh.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.mpm.vpnl.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/label/rh.aparc.DKTatlas.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/aparc+aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/aparc.a2009s+aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/mri/aparc.DKTatlas+aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/lh.sphere.reg;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/surf/rh.sphere.reg;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/stats/aseg.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/stats/wmparc.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/stats/rh.aparc.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/stats/lh.aparc.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/stats/lh.aparc.a2009s.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/stats/rh.aparc.a2009s.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/stats/lh.curv.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132/sub-ADNI002S0413_ses-M132/stats/rh.curv.stats;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M132/anat/sub-ADNI002S0413_ses-M132_T1w.nii.gz;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/_0xd5a534d05e44050da88bfec1c1838fe2_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/command.txt;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/_node.pklz
+250326-12:39:09,701 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/_report
+250326-12:39:09,701 nipype.workflow DEBUG:
+	 Removing files: 
+250326-12:39:09,701 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz'
+250326-12:39:09,718 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/_report/report.rst"
+250326-12:39:10,19 nipype.workflow INFO:
+	 [Job 3] Completed (t1-freesurfer.1-SegmentationReconAll).
+250326-12:39:10,20 nipype.workflow DEBUG:
+	 Tasks currently running: 1. Pending: 1.
+250326-12:39:10,20 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 21.12/21.32, Free processors: 3/4, Free GPU slot:0/0.
+                     Currently running:
+                       * t1-freesurfer.1-SegmentationReconAll
+250326-12:39:10,71 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.2-CreateTsvFiles ID=6 (0.20GB, 1 threads). Free: 20.92GB, 2 threads, 0 GPU slots.
+250326-12:39:10,71 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles".
+250326-12:39:10,71 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.2-CreateTsvFiles" locally: cached=False, updated=False.
+250326-12:39:10,71 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles".
+250326-12:39:10,71 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.2-CreateTsvFiles (taskid=9).
+250326-12:39:10,72 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.2-CreateTsvFiles" in "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles".
+250326-12:39:10,72 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles".
+250326-12:39:10,72 nipype.workflow DEBUG:
+	 [Node] Setting 2 connected inputs of node "2-CreateTsvFiles" from 2 previous nodes.
+250326-12:39:10,72 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/0-InitPipeline/result_0-InitPipeline.pklz
+250326-12:39:10,73 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-12:39:10,73 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-12:39:10,73 nipype.workflow DEBUG:
+	 [Node] 2-CreateTsvFiles - setting input subjects_dir = /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M132
+250326-12:39:10,73 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz
+250326-12:39:10,76 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-12:39:10,79 nipype.workflow DEBUG:
+	 output: subject_id
+250326-12:39:10,79 nipype.workflow DEBUG:
+	 [Node] 2-CreateTsvFiles - setting input image_id = sub-ADNI002S0413_ses-M132
+250326-12:39:10,79 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles
+250326-12:39:10,79 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles/_report/report.rst"
+250326-12:39:10,79 nipype.workflow INFO:
+	 [Node] Executing "2-CreateTsvFiles" <nipype.interfaces.utility.wrappers.Function>
+250326-12:39:10,108 nipype.workflow INFO:
+	 [Node] Finished "2-CreateTsvFiles", elapsed time 0.027845s.
+250326-12:39:10,108 nipype.workflow DEBUG:
+	 Needed files: /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles/_0xd714778b58a687e8959539a4931d6473_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles/_node.pklz
+250326-12:39:10,108 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles/_report
+250326-12:39:10,108 nipype.workflow DEBUG:
+	 Removing files: 
+250326-12:39:10,108 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles/result_2-CreateTsvFiles.pklz'
+250326-12:39:10,109 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles/_report/report.rst"
+250326-12:39:12,20 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 7/2/0 (done/running/ready), 2/3 (pending_tasks/waiting).
+250326-12:39:12,20 nipype.workflow INFO:
+	 [Job 6] Completed (t1-freesurfer.2-CreateTsvFiles).
+250326-12:39:12,21 nipype.workflow DEBUG:
+	 Tasks currently running: 1. Pending: 1.
+250326-12:39:12,21 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 21.12/21.32, Free processors: 3/4, Free GPU slot:0/0.
+                     Currently running:
+                       * t1-freesurfer.1-SegmentationReconAll
+250326-12:39:12,72 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.SaveToCaps ID=9 (0.20GB, 1 threads). Free: 20.92GB, 2 threads, 0 GPU slots.
+250326-12:39:12,72 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps".
+250326-12:39:12,72 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.SaveToCaps" locally: cached=False, updated=False.
+250326-12:39:12,72 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps".
+250326-12:39:12,73 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.SaveToCaps (taskid=10).
+250326-12:39:12,74 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.SaveToCaps" in "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps".
+250326-12:39:12,74 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps".
+250326-12:39:12,74 nipype.workflow DEBUG:
+	 [Node] Setting 1 connected inputs of node "SaveToCaps" from 1 previous nodes.
+250326-12:39:12,74 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/2-CreateTsvFiles/result_2-CreateTsvFiles.pklz
+250326-12:39:12,74 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-12:39:12,75 nipype.workflow DEBUG:
+	 output: image_id
+250326-12:39:12,75 nipype.workflow DEBUG:
+	 [Node] SaveToCaps - setting input image_id = sub-ADNI002S0413_ses-M132
+250326-12:39:12,75 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps
+250326-12:39:12,75 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps/_report/report.rst"
+250326-12:39:12,76 nipype.workflow INFO:
+	 [Node] Executing "SaveToCaps" <nipype.interfaces.utility.wrappers.Function>
+250326-12:39:12,332 nipype.workflow INFO:
+	 [Node] Finished "SaveToCaps", elapsed time 0.256038s.
+250326-12:39:12,333 nipype.workflow DEBUG:
+	 Needed files: /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps/_0x59be1c705710376ce9a30a9035801ea4_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps/_node.pklz
+250326-12:39:12,333 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps/_report
+250326-12:39:12,333 nipype.workflow DEBUG:
+	 Removing files: 
+250326-12:39:12,333 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps/result_SaveToCaps.pklz'
+250326-12:39:12,333 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/87ff14556af51f43a9b2e7952703c10e9fc3b1e7/SaveToCaps/_report/report.rst"
+250326-12:39:14,21 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 8/2/0 (done/running/ready), 2/2 (pending_tasks/waiting).
+250326-12:39:14,22 nipype.workflow INFO:
+	 [Job 9] Completed (t1-freesurfer.SaveToCaps).
+250326-12:39:14,22 nipype.workflow DEBUG:
+	 Tasks currently running: 1. Pending: 1.
+250326-12:39:14,22 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 0 jobs ready. Free memory (GB): 21.12/21.32, Free processors: 3/4, Free GPU slot:0/0.
+                     Currently running:
+                       * t1-freesurfer.1-SegmentationReconAll
+250326-12:39:16,22 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 9/1/0 (done/running/ready), 1/2 (pending_tasks/waiting).
+250326-12:39:16,22 nipype.workflow DEBUG:
+	 Tasks currently running: 1. Pending: 1.
+250326-12:44:44,143 nipype.workflow INFO:
+	 [Node] Finished "1-SegmentationReconAll", elapsed time 17318.358494s.
+250326-12:44:44,144 nipype.workflow DEBUG:
+	 Needed files: /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/T1.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/brain.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/brainmask.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/filled.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/norm.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/nu.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/orig.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/rawavg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/ribbon.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/lh.ribbon.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/rh.ribbon.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/wm.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/wmparc.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.avg_curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.avg_curv;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.inflated;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.inflated;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.area.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.area.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.curv.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.curv.pial;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.smoothwm;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.smoothwm;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.sphere;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.sphere;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.sulc;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.sulc;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.thickness;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.thickness;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.volume;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.volume;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.jacobian_white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.jacobian_white;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.nofix.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.FG4.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA3b_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA4p_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA6_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.hOc1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.V1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.FG1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA3a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.perirhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA6_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA4a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA4a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.FG4.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA4p_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA45_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.hOc2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.V2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA44_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA4a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.V1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA6_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.FG3.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA4a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.MT_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA45_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.MT_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.entorhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.hOc3v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.FG1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA45_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.V1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.FG2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA3a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.entorhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA3a_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.FG3.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA6_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA45_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.V2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.entorhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.perirhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA44_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA3b_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA44_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.hOc2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.cortex+hipamyg.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.V1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.V2_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.MT_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.hOc4v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA44_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.hOc3v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.cortex+hipamyg.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA4p_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA3a_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.V2_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.perirhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.hOc4v.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA4p_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.FG2.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA3b_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.perirhinal_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.hOc1.mpm.vpnl.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.MT_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.entorhinal_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA1_exvivo.thresh.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA3b_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.nofix.cortex.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA1_exvivo.label;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA_exvivo.thresh.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.aparc.DKTatlas.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.mpm.vpnl.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA_exvivo.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.aparc.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.aparc.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.aparc.a2009s.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.aparc.a2009s.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/lh.BA_exvivo.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.BA_exvivo.thresh.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.mpm.vpnl.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/label/rh.aparc.DKTatlas.annot;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/aparc+aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/aparc.a2009s+aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/mri/aparc.DKTatlas+aseg.mgz;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/lh.sphere.reg;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/surf/rh.sphere.reg;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/stats/aseg.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/stats/wmparc.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/stats/rh.aparc.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/stats/lh.aparc.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/stats/lh.aparc.a2009s.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/stats/rh.aparc.a2009s.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/stats/lh.curv.stats;/tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162/sub-ADNI002S0413_ses-M162/stats/rh.curv.stats;/home/david/Desktop/ADNI/ADNI_BIDS/sub-ADNI002S0413/ses-M162/anat/sub-ADNI002S0413_ses-M162_T1w.nii.gz;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/_0xb9b1587470b58204120097b9ece718b9_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/command.txt;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/_node.pklz
+250326-12:44:44,145 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/_report
+250326-12:44:44,145 nipype.workflow DEBUG:
+	 Removing files: 
+250326-12:44:44,145 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz'
+250326-12:44:44,162 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/_report/report.rst"
+250326-12:44:45,820 nipype.workflow INFO:
+	 [Job 4] Completed (t1-freesurfer.1-SegmentationReconAll).
+250326-12:44:45,820 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250326-12:44:45,820 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 21.32/21.32, Free processors: 4/4, Free GPU slot:0/0.
+250326-12:44:45,861 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.2-CreateTsvFiles ID=7 (0.20GB, 1 threads). Free: 21.12GB, 3 threads, 0 GPU slots.
+250326-12:44:45,861 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles".
+250326-12:44:45,861 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.2-CreateTsvFiles" locally: cached=False, updated=False.
+250326-12:44:45,861 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles".
+250326-12:44:45,861 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.2-CreateTsvFiles (taskid=11).
+250326-12:44:45,862 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.2-CreateTsvFiles" in "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles".
+250326-12:44:45,862 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles".
+250326-12:44:45,862 nipype.workflow DEBUG:
+	 [Node] Setting 2 connected inputs of node "2-CreateTsvFiles" from 2 previous nodes.
+250326-12:44:45,862 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/0-InitPipeline/result_0-InitPipeline.pklz
+250326-12:44:45,862 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-12:44:45,863 nipype.workflow DEBUG:
+	 output: subjects_dir
+250326-12:44:45,863 nipype.workflow DEBUG:
+	 [Node] 2-CreateTsvFiles - setting input subjects_dir = /tmp/tmpu0pd_9f5/t1-freesurfer/ReconAll/sub-ADNI002S0413_ses-M162
+250326-12:44:45,863 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/1-SegmentationReconAll/result_1-SegmentationReconAll.pklz
+250326-12:44:45,866 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-12:44:45,868 nipype.workflow DEBUG:
+	 output: subject_id
+250326-12:44:45,868 nipype.workflow DEBUG:
+	 [Node] 2-CreateTsvFiles - setting input image_id = sub-ADNI002S0413_ses-M162
+250326-12:44:45,868 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles
+250326-12:44:45,869 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles/_report/report.rst"
+250326-12:44:45,869 nipype.workflow INFO:
+	 [Node] Executing "2-CreateTsvFiles" <nipype.interfaces.utility.wrappers.Function>
+250326-12:44:45,901 nipype.workflow INFO:
+	 [Node] Finished "2-CreateTsvFiles", elapsed time 0.031103s.
+250326-12:44:45,901 nipype.workflow DEBUG:
+	 Needed files: /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles/_0x9da5881f13ce4eb5417fcb46ebf97552_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles/_node.pklz
+250326-12:44:45,901 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles/_report
+250326-12:44:45,901 nipype.workflow DEBUG:
+	 Removing files: 
+250326-12:44:45,901 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles/result_2-CreateTsvFiles.pklz'
+250326-12:44:45,902 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles/_report/report.rst"
+250326-12:44:47,821 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 10/1/0 (done/running/ready), 1/1 (pending_tasks/waiting).
+250326-12:44:47,821 nipype.workflow INFO:
+	 [Job 7] Completed (t1-freesurfer.2-CreateTsvFiles).
+250326-12:44:47,821 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250326-12:44:47,821 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 21.32/21.32, Free processors: 4/4, Free GPU slot:0/0.
+250326-12:44:47,866 nipype.workflow DEBUG:
+	 Allocating t1-freesurfer.SaveToCaps ID=10 (0.20GB, 1 threads). Free: 21.12GB, 3 threads, 0 GPU slots.
+250326-12:44:47,866 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps".
+250326-12:44:47,866 nipype.workflow DEBUG:
+	 Checking hash "t1-freesurfer.SaveToCaps" locally: cached=False, updated=False.
+250326-12:44:47,866 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps".
+250326-12:44:47,867 nipype.workflow DEBUG:
+	 [MultiProc] Submitted task t1-freesurfer.SaveToCaps (taskid=12).
+250326-12:44:47,867 nipype.workflow INFO:
+	 [Node] Setting-up "t1-freesurfer.SaveToCaps" in "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps".
+250326-12:44:47,867 nipype.workflow DEBUG:
+	 [Node] Not cached "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps".
+250326-12:44:47,867 nipype.workflow DEBUG:
+	 [Node] Setting 1 connected inputs of node "SaveToCaps" from 1 previous nodes.
+250326-12:44:47,867 nipype.utils DEBUG:
+	 Loading pkl: /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/2-CreateTsvFiles/result_2-CreateTsvFiles.pklz
+250326-12:44:47,868 nipype.workflow DEBUG:
+	 Resolving paths in outputs loaded from results file.
+250326-12:44:47,868 nipype.workflow DEBUG:
+	 output: image_id
+250326-12:44:47,868 nipype.workflow DEBUG:
+	 [Node] SaveToCaps - setting input image_id = sub-ADNI002S0413_ses-M162
+250326-12:44:47,868 nipype.utils DEBUG:
+	 Removing contents of /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps
+250326-12:44:47,868 nipype.workflow DEBUG:
+	 [Node] Writing pre-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps/_report/report.rst"
+250326-12:44:47,869 nipype.workflow INFO:
+	 [Node] Executing "SaveToCaps" <nipype.interfaces.utility.wrappers.Function>
+250326-12:44:48,103 nipype.workflow INFO:
+	 [Node] Finished "SaveToCaps", elapsed time 0.232777s.
+250326-12:44:48,103 nipype.workflow DEBUG:
+	 Needed files: /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps/_0x98f94ff1152a3f23ce69df9ce25ce36f_unfinished.json;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps/_inputs.pklz;/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps/_node.pklz
+250326-12:44:48,103 nipype.workflow DEBUG:
+	 Needed dirs: /tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps/_report
+250326-12:44:48,103 nipype.workflow DEBUG:
+	 Removing files: 
+250326-12:44:48,103 nipype.workflow DEBUG:
+	 Saving results file: '/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps/result_SaveToCaps.pklz'
+250326-12:44:48,104 nipype.workflow DEBUG:
+	 [Node] Writing post-exec report to "/tmp/tmpu0pd_9f5/t1-freesurfer/1bbf1aba20a22388a6b99b042e68a3e698c63f85/SaveToCaps/_report/report.rst"
+250326-12:44:49,834 nipype.workflow DEBUG:
+	 Progress: 12 jobs, 11/1/0 (done/running/ready), 1/0 (pending_tasks/waiting).
+250326-12:44:49,834 nipype.workflow INFO:
+	 [Job 10] Completed (t1-freesurfer.SaveToCaps).
+250326-12:44:49,834 nipype.workflow DEBUG:
+	 Tasks currently running: 0. Pending: 0.
+250326-12:44:49,835 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 0 jobs ready. Free memory (GB): 21.32/21.32, Free processors: 4/4, Free GPU slot:0/0.
+250326-12:44:49,835 nipype.workflow DEBUG:
+	 No tasks are being run, and no jobs can be submitted to the queue. Potential deadlock
+250326-15:27:51,666 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250326-15:27:51,666 nipype.interface DEBUG:
+	 nodesktop_True
+250326-15:27:51,666 nipype.interface DEBUG:
+	 nosplash_True
+250326-15:27:51,667 nipype.interface DEBUG:
+	 single_comp_thread_True
+250326-15:27:51,667 nipype.interface DEBUG:
+	 nodesktop_True
+250326-15:27:51,667 nipype.interface DEBUG:
+	 nosplash_True
+250326-15:27:51,667 nipype.interface DEBUG:
+	 single_comp_thread_True
+250326-15:30:27,131 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250326-15:30:27,131 nipype.interface DEBUG:
+	 nodesktop_True
+250326-15:30:27,132 nipype.interface DEBUG:
+	 nosplash_True
+250326-15:30:27,132 nipype.interface DEBUG:
+	 single_comp_thread_True
+250326-15:30:27,132 nipype.interface DEBUG:
+	 nodesktop_True
+250326-15:30:27,132 nipype.interface DEBUG:
+	 nosplash_True
+250326-15:30:27,132 nipype.interface DEBUG:
+	 single_comp_thread_True
