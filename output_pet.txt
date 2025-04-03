@@ -1,0 +1,49 @@
+Variables Exported
+[32m2025-04-03 22:42:01,631:INFO:Setting SPM path to /home/david/spm12[0m
+[32m2025-04-03 22:42:15,536:INFO:The CAPS dataset 'None', located at /home/david/Desktop/ADNI/ADNI_CAPS, already contains a 'dataset_description.json' file.[0m
+[33m2025-04-03 22:42:15,537:WARNING:The existing CAPS dataset, located at /home/david/Desktop/ADNI/ADNI_CAPS has a name '7f0a1027-3936-498e-abba-617962caf524' different from the new name '076b61bb-7fb8-4b06-9a22-6b79a608f3c7'. The old name will be kept.[0m
+[32m2025-04-03 22:42:15,623:INFO:Found installation of freesurfer with version 7.4.1, satisfying >=6.[0m
+[32m2025-04-03 22:42:16,134:INFO:Found installation of petpvc with version 0.0.0, satisfying >=0.0.0.[0m
+[32m2025-04-03 22:42:31,363:INFO:Setting SPM path to /home/david/spm12[0m
+[32m2025-04-03 22:42:31,363:INFO:Found installation of spm with version 12.7771, satisfying >=12.[0m
+[33m2025-04-03 22:42:31,590:WARNING:None[0m
+Traceback (most recent call last):
+  File "/home/david/miniconda3/envs/adni_clinica94/bin/clinica", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/clinica/cmdline.py", line 113, in main
+    cli()
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/click/core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/clinica/pipelines/pet_surface/pet_surface_cli.py", line 77, in cli
+    pipeline.run(plugin="MultiProc", plugin_args={"n_procs": n_procs})
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/clinica/pipelines/engine.py", line 729, in run
+    self.build()
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/clinica/pipelines/engine.py", line 45, in func_wrapper
+    res = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/clinica/pipelines/engine.py", line 693, in build
+    self._build_input_node()
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/clinica/pipelines/pet_surface/pet_surface_pipeline.py", line 58, in _build_input_node
+    self._build_input_node_cross_sectional()
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/clinica/pipelines/pet_surface/pet_surface_pipeline.py", line 314, in _build_input_node_cross_sectional
+    check_relative_volume_location_in_world_coordinate_system(
+  File "/home/david/miniconda3/envs/adni_clinica94/lib/python3.12/site-packages/clinica/iotools/utils/data_handling/_centering.py", line 216, in check_relative_volume_location_in_world_coordinate_system
+    warnings.warn(warning_message)
+TypeError: expected string or bytes-like object, got 'NoneType'

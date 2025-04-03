@@ -12,3 +12,17 @@
 	 nosplash_True
 250403-22:25:18,367 nipype.interface DEBUG:
 	 single_comp_thread_True
+250403-22:42:01,631 nipype.interface DEBUG:
+	 matlab command or path has changed. recomputing version.
+250403-22:42:01,632 nipype.interface DEBUG:
+	 nodesktop_True
+250403-22:42:01,632 nipype.interface DEBUG:
+	 nosplash_True
+250403-22:42:01,632 nipype.interface DEBUG:
+	 single_comp_thread_True
+250403-22:42:01,632 nipype.interface DEBUG:
+	 nodesktop_True
+250403-22:42:01,632 nipype.interface DEBUG:
+	 nosplash_True
+250403-22:42:01,632 nipype.interface DEBUG:
+	 single_comp_thread_True
